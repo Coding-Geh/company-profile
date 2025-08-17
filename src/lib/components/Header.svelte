@@ -1,6 +1,8 @@
 <script>
 	import ThemeToggle from './ThemeToggle.svelte';
 	import LanguageSwitcher from './LanguageSwitcher.svelte';
+	import { theme, toggleTheme } from '$lib/stores/theme';
+	import { locale } from 'svelte-i18n';
 	
 	let isMenuOpen = false;
 	
@@ -11,6 +13,31 @@
 	function closeMenu() {
 		isMenuOpen = false;
 	}
+	
+	function switchLanguage(lang) {
+		locale.set(lang);
+	}
+	
+	// Close mobile language menu when clicking outside
+	function handleClickOutside(event) {
+		const menu = document.getElementById('mobile-language-menu');
+		const button = event.target;
+		
+		if (menu && !menu.contains(button) && !button.closest('button')) {
+			menu.classList.add('hidden');
+		}
+	}
+	
+	// Add event listener when component mounts
+	import { onMount } from 'svelte';
+	
+	onMount(() => {
+		document.addEventListener('click', handleClickOutside);
+		
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	});
 </script>
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-secondary-900/95 backdrop-blur-md border-b border-secondary-200 dark:border-secondary-700">
@@ -70,9 +97,60 @@
 					<a href="#team" on:click={closeMenu} class="block text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Team</a>
 					<a href="#contact" on:click={closeMenu} class="block text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Contact</a>
 					<div class="pt-4 space-y-4">
-						<div class="flex justify-center space-x-4">
-							<LanguageSwitcher />
-							<ThemeToggle />
+						<div class="flex justify-center space-x-6">
+							<!-- Mobile Language Switcher -->
+							<div class="relative">
+								<button
+									on:click={() => document.getElementById('mobile-language-menu')?.classList.toggle('hidden')}
+									class="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-secondary-700 dark:text-secondary-300 bg-secondary-100 dark:bg-secondary-800 border border-secondary-300 dark:border-secondary-600 rounded-lg hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
+								>
+									{#if $locale === 'en'}
+										🇺🇸 EN
+									{:else if $locale === 'id'}
+										🇮🇩 ID
+									{:else}
+										🌐 EN
+									{/if}
+								</button>
+								<div
+									id="mobile-language-menu"
+									class="absolute left-0 z-10 w-32 mt-2 origin-top-left bg-white dark:bg-secondary-800 border border-secondary-300 dark:border-secondary-600 rounded-lg shadow-lg hidden"
+								>
+									<div class="py-1">
+										<button
+											on:click={() => { switchLanguage('en'); document.getElementById('mobile-language-menu')?.classList.add('hidden'); }}
+											class="block w-full px-3 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-700 text-left transition-colors duration-200"
+										>
+											🇺🇸 English
+										</button>
+										<button
+											on:click={() => { switchLanguage('id'); document.getElementById('mobile-language-menu')?.classList.add('hidden'); }}
+											class="block w-full px-3 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-700 text-left transition-colors duration-200"
+										>
+											🇮🇩 Indonesia
+										</button>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Mobile Theme Toggle -->
+							<button
+								on:click={toggleTheme}
+								class="relative inline-flex h-8 w-16 items-center rounded-full bg-secondary-200 dark:bg-secondary-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-secondary-900"
+								aria-label="Toggle theme"
+							>
+								<div class="absolute left-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-white shadow-md transition-transform duration-200 {$theme === 'dark' ? 'translate-x-8' : 'translate-x-0'}">
+									{#if $theme === 'light'}
+										<svg class="h-4 w-4 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+											<path d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M3.36,17L5.12,13.23C5.26,14 5.53,14.78 5.95,15.5C6.37,16.24 6.91,16.86 7.5,17.37L3.36,17M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M20.64,17L16.5,17.36C17.09,16.85 17.62,16.22 18.04,15.5C18.46,14.77 18.73,14 18.87,13.21L20.64,17M12,22L9.59,18.56C10.33,18.83 11.14,19 12,19C12.82,19 13.63,18.83 14.37,18.56L12,22Z"/>
+										</svg>
+									{:else}
+										<svg class="h-4 w-4 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+											<path d="M12,3A6,6 0 0,1 18,9C18,10.31 17.55,11.52 16.8,12.5L19.14,15.5C19.91,14.79 20.5,13.8 20.5,12.5C20.5,9.46 18.04,7 15,7C13.7,7 12.71,7.59 12,8.36C11.29,7.59 10.3,7 9,7C5.96,7 3.5,9.46 3.5,12.5C3.5,13.8 4.09,14.79 4.86,15.5L7.2,12.5C6.45,11.52 6,10.31 6,9A6,6 0 0,1 12,3M12,5A4,4 0 0,0 8,9C8,10.21 8.45,11.32 9.2,12.2L11.5,14.5C11.5,14.5 12,15 12,15C12,15 12.5,14.5 12.5,14.5L14.8,12.2C15.55,11.32 16,10.21 16,9A4,4 0 0,0 12,5Z"/>
+										</svg>
+									{/if}
+								</div>
+							</button>
 						</div>
 						<a href="#contact" on:click={closeMenu} class="btn-primary w-full text-center">Get Started</a>
 					</div>
