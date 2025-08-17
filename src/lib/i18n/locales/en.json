@@ -1,0 +1,143 @@
+{
+	"nav": {
+		"home": "Home",
+		"about": "About",
+		"services": "Services",
+		"team": "Team",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Building the Future of",
+		"titleHighlight": "Coding",
+		"description": "CodingGeh helps developers and businesses create amazing digital experiences with innovative solutions, modern technologies, and cutting-edge development practices.",
+		"getStarted": "Get Started",
+		"learnMore": "Learn More",
+		"stats": {
+			"projects": "500+ Projects",
+			"clients": "50+ Clients",
+			"years": "5+ Years"
+		}
+	},
+	"about": {
+		"title": "About CodingGeh",
+		"description": "We are a passionate team of developers and designers dedicated to creating amazing digital experiences and helping businesses thrive in the modern tech landscape.",
+		"mission": {
+			"title": "Mission",
+			"description": "Our mission is to empower developers and businesses with cutting-edge coding solutions, modern development practices, and innovative technologies that drive digital transformation."
+		},
+		"vision": {
+			"title": "Vision",
+			"description": "We envision a world where every developer has access to the best tools, resources, and expertise needed to create amazing digital experiences and build successful products."
+		},
+		"values": {
+			"innovation": "Innovation",
+			"collaboration": "Collaboration",
+			"excellence": "Excellence"
+		}
+	},
+	"services": {
+		"title": "Our Services",
+		"description": "CodingGeh offers a comprehensive range of development and design services to help your business succeed in the digital world.",
+		"web": {
+			"title": "Web Development",
+			"description": "Modern web applications built with React, Vue, Svelte, and cutting-edge technologies.",
+			"features": ["React/Vue/Svelte", "TypeScript", "Modern APIs", "Performance Optimized"]
+		},
+		"mobile": {
+			"title": "Mobile Development",
+			"description": "Cross-platform mobile apps with React Native, Flutter, and native development.",
+			"features": ["React Native", "Flutter", "iOS/Android", "App Store Ready"]
+		},
+		"backend": {
+			"title": "Backend Development",
+			"description": "Scalable backend systems with Node.js, Python, and cloud-native architectures.",
+			"features": ["Node.js/Python", "REST APIs", "Database Design", "Cloud Deployment"]
+		},
+		"design": {
+			"title": "UI/UX Design",
+			"description": "Beautiful and intuitive user interfaces with modern design systems.",
+			"features": ["Figma/Sketch", "Design Systems", "User Research", "Prototyping"]
+		},
+		"devops": {
+			"title": "DevOps & Cloud",
+			"description": "CI/CD pipelines, cloud infrastructure, and deployment automation.",
+			"features": ["AWS/Azure/GCP", "Docker/Kubernetes", "CI/CD", "Monitoring"]
+		},
+		"consulting": {
+			"title": "Code Consulting",
+			"description": "Technical consulting, code reviews, and architecture guidance.",
+			"features": ["Code Reviews", "Architecture", "Best Practices", "Performance"]
+		}
+	},
+	"team": {
+		"title": "Meet the CodingGeh Team",
+		"description": "Our passionate team of developers, designers, and tech enthusiasts dedicated to creating amazing digital experiences.",
+		"members": {
+			"founder": {
+				"name": "CodingGeh",
+				"position": "Lead Developer & Founder",
+				"description": "Passionate full-stack developer with expertise in React, Vue, Svelte, and modern web technologies."
+			},
+			"tech": {
+				"name": "Tech Team",
+				"position": "Senior Developers",
+				"description": "Experienced developers specializing in frontend, backend, and mobile development."
+			},
+			"design": {
+				"name": "Design Team",
+				"position": "UI/UX Designers",
+				"description": "Creative designers focused on creating beautiful and intuitive user experiences."
+			},
+			"devops": {
+				"name": "DevOps Team",
+				"position": "DevOps Engineers",
+				"description": "Infrastructure experts ensuring smooth deployment and scalable cloud solutions."
+			}
+		}
+	},
+	"contact": {
+		"title": "Contact Us",
+		"description": "Ready to start your next project? Get in touch with us today.",
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"message": "Message",
+			"send": "Send Message",
+			"placeholder": {
+				"name": "Your name",
+				"email": "your.email@example.com",
+				"message": "Tell us about your project..."
+			}
+		},
+		"info": {
+			"address": {
+				"title": "Office Address",
+				"value": "123 Tech Street, Digital City, DC 12345"
+			},
+			"phone": {
+				"title": "Phone",
+				"value": "+1 (555) 123-4567"
+			},
+			"email": {
+				"title": "Email",
+				"value": "hello@codinggeh.com"
+			}
+		}
+	},
+	"footer": {
+		"description": "Building the future of coding with innovative solutions, modern technologies, and cutting-edge development practices.",
+		"quickLinks": "Quick Links",
+		"services": "Services",
+		"copyright": "© 2024 CodingGeh. All rights reserved."
+	},
+	"common": {
+		"getStarted": "Get Started",
+		"learnMore": "Learn More",
+		"viewMore": "View More",
+		"readMore": "Read More",
+		"contact": "Contact",
+		"email": "Email",
+		"phone": "Phone",
+		"address": "Address"
+	}
+}

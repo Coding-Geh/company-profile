@@ -1,0 +1,143 @@
+{
+	"nav": {
+		"home": "Beranda",
+		"about": "Tentang",
+		"services": "Layanan",
+		"team": "Tim",
+		"contact": "Kontak"
+	},
+	"hero": {
+		"title": "Membangun Masa Depan",
+		"titleHighlight": "Coding",
+		"description": "CodingGeh membantu developer dan bisnis menciptakan pengalaman digital yang menakjubkan dengan solusi inovatif, teknologi modern, dan praktik pengembangan yang cutting-edge.",
+		"getStarted": "Mulai Sekarang",
+		"learnMore": "Pelajari Lebih Lanjut",
+		"stats": {
+			"projects": "500+ Proyek",
+			"clients": "50+ Klien",
+			"years": "5+ Tahun"
+		}
+	},
+	"about": {
+		"title": "Tentang CodingGeh",
+		"description": "Kami adalah tim developer dan designer yang passionate, berdedikasi untuk menciptakan pengalaman digital yang menakjubkan dan membantu bisnis berkembang di lanskap teknologi modern.",
+		"mission": {
+			"title": "Misi",
+			"description": "Misi kami adalah memberdayakan developer dan bisnis dengan solusi coding cutting-edge, praktik pengembangan modern, dan teknologi inovatif yang mendorong transformasi digital."
+		},
+		"vision": {
+			"title": "Visi",
+			"description": "Kami membayangkan dunia di mana setiap developer memiliki akses ke tools, resources, dan expertise terbaik yang dibutuhkan untuk menciptakan pengalaman digital yang menakjubkan dan membangun produk yang sukses."
+		},
+		"values": {
+			"innovation": "Inovasi",
+			"collaboration": "Kolaborasi",
+			"excellence": "Keunggulan"
+		}
+	},
+	"services": {
+		"title": "Layanan Kami",
+		"description": "CodingGeh menawarkan berbagai layanan pengembangan dan desain yang komprehensif untuk membantu bisnis Anda sukses di dunia digital.",
+		"web": {
+			"title": "Web Development",
+			"description": "Aplikasi web modern yang dibangun dengan React, Vue, Svelte, dan teknologi cutting-edge.",
+			"features": ["React/Vue/Svelte", "TypeScript", "Modern APIs", "Performance Optimized"]
+		},
+		"mobile": {
+			"title": "Mobile Development",
+			"description": "Aplikasi mobile cross-platform dengan React Native, Flutter, dan pengembangan native.",
+			"features": ["React Native", "Flutter", "iOS/Android", "App Store Ready"]
+		},
+		"backend": {
+			"title": "Backend Development",
+			"description": "Sistem backend yang scalable dengan Node.js, Python, dan arsitektur cloud-native.",
+			"features": ["Node.js/Python", "REST APIs", "Database Design", "Cloud Deployment"]
+		},
+		"design": {
+			"title": "UI/UX Design",
+			"description": "Antarmuka pengguna yang indah dan intuitif dengan design system modern.",
+			"features": ["Figma/Sketch", "Design Systems", "User Research", "Prototyping"]
+		},
+		"devops": {
+			"title": "DevOps & Cloud",
+			"description": "Pipeline CI/CD, infrastruktur cloud, dan otomatisasi deployment.",
+			"features": ["AWS/Azure/GCP", "Docker/Kubernetes", "CI/CD", "Monitoring"]
+		},
+		"consulting": {
+			"title": "Code Consulting",
+			"description": "Konsultasi teknis, code review, dan panduan arsitektur.",
+			"features": ["Code Reviews", "Architecture", "Best Practices", "Performance"]
+		}
+	},
+	"team": {
+		"title": "Kenali Tim CodingGeh",
+		"description": "Tim developer, designer, dan tech enthusiast yang passionate, berdedikasi untuk menciptakan pengalaman digital yang menakjubkan.",
+		"members": {
+			"founder": {
+				"name": "CodingGeh",
+				"position": "Lead Developer & Founder",
+				"description": "Full-stack developer yang passionate dengan keahlian di React, Vue, Svelte, dan teknologi web modern."
+			},
+			"tech": {
+				"name": "Tech Team",
+				"position": "Senior Developers",
+				"description": "Developer berpengalaman yang mengkhususkan diri dalam frontend, backend, dan mobile development."
+			},
+			"design": {
+				"name": "Design Team",
+				"position": "UI/UX Designers",
+				"description": "Designer kreatif yang fokus pada menciptakan user experience yang indah dan intuitif."
+			},
+			"devops": {
+				"name": "DevOps Team",
+				"position": "DevOps Engineers",
+				"description": "Ahli infrastruktur yang memastikan deployment yang lancar dan solusi cloud yang scalable."
+			}
+		}
+	},
+	"contact": {
+		"title": "Hubungi Kami",
+		"description": "Siap untuk memulai proyek berikutnya? Hubungi kami hari ini.",
+		"form": {
+			"name": "Nama",
+			"email": "Email",
+			"message": "Pesan",
+			"send": "Kirim Pesan",
+			"placeholder": {
+				"name": "Nama Anda",
+				"email": "email.anda@contoh.com",
+				"message": "Ceritakan tentang proyek Anda..."
+			}
+		},
+		"info": {
+			"address": {
+				"title": "Alamat Kantor",
+				"value": "Jl. Tech No. 123, Kota Digital, DC 12345"
+			},
+			"phone": {
+				"title": "Telepon",
+				"value": "+62 (555) 123-4567"
+			},
+			"email": {
+				"title": "Email",
+				"value": "hello@codinggeh.com"
+			}
+		}
+	},
+	"footer": {
+		"description": "Membangun masa depan coding dengan solusi inovatif, teknologi modern, dan praktik pengembangan cutting-edge.",
+		"quickLinks": "Link Cepat",
+		"services": "Layanan",
+		"copyright": "© 2024 CodingGeh. Semua hak dilindungi."
+	},
+	"common": {
+		"getStarted": "Mulai Sekarang",
+		"learnMore": "Pelajari Lebih Lanjut",
+		"viewMore": "Lihat Lebih Banyak",
+		"readMore": "Baca Selengkapnya",
+		"contact": "Kontak",
+		"email": "Email",
+		"phone": "Telepon",
+		"address": "Alamat"
+	}
+}

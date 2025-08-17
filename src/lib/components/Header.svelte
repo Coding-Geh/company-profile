@@ -1,5 +1,6 @@
 <script>
 	import ThemeToggle from './ThemeToggle.svelte';
+	import LanguageSwitcher from './LanguageSwitcher.svelte';
 	
 	let isMenuOpen = false;
 	
@@ -36,6 +37,7 @@
 			
 			<!-- Desktop Actions -->
 			<div class="hidden md:flex items-center space-x-4">
+				<LanguageSwitcher />
 				<ThemeToggle />
 				<a href="#contact" class="btn-primary">Get Started</a>
 			</div>
@@ -68,7 +70,8 @@
 					<a href="#team" on:click={closeMenu} class="block text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Team</a>
 					<a href="#contact" on:click={closeMenu} class="block text-secondary-700 dark:text-secondary-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200">Contact</a>
 					<div class="pt-4 space-y-4">
-						<div class="flex justify-center">
+						<div class="flex justify-center space-x-4">
+							<LanguageSwitcher />
 							<ThemeToggle />
 						</div>
 						<a href="#contact" on:click={closeMenu} class="btn-primary w-full text-center">Get Started</a>
