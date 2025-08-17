@@ -1,6 +1,4 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	
 	const services = [
 		{
 			icon: '💻',
@@ -44,10 +42,10 @@
 <section id="services" class="section-padding bg-gradient-secondary dark:bg-gradient-to-br dark:from-secondary-800 dark:to-secondary-900">
 	<div class="container-max">
 		<div class="text-center mb-16">
-			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
+			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 dark:text-white mb-4">
 				Our Services
 			</h2>
-			<p class="text-lg text-secondary-700 max-w-3xl mx-auto">
+			<p class="text-lg text-secondary-700 dark:text-secondary-300 max-w-3xl mx-auto">
 				CodingGeh offers a comprehensive range of development and design services to help your business succeed in the digital world.
 			</p>
 		</div>
@@ -59,17 +57,17 @@
 						<span class="text-2xl">{service.icon}</span>
 					</div>
 					
-					<h3 class="text-xl font-bold text-secondary-900 mb-4">
+					<h3 class="text-xl font-bold text-secondary-900 dark:text-white mb-4">
 						{service.title}
 					</h3>
 					
-					<p class="text-secondary-700 mb-6">
+					<p class="text-secondary-700 dark:text-secondary-300 mb-6">
 						{service.description}
 					</p>
 					
 					<ul class="space-y-2">
 						{#each service.features as feature}
-							<li class="flex items-center text-sm text-secondary-600">
+							<li class="flex items-center text-sm text-secondary-600 dark:text-secondary-400">
 								<span class="text-primary-600 mr-2">✓</span>
 								{feature}
 							</li>

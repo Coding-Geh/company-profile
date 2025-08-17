@@ -1,5 +1,4 @@
 <script>
-	import { _ } from 'svelte-i18n';
 </script>
 
 <footer class="bg-secondary-900 dark:bg-secondary-950 text-white">

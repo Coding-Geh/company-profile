@@ -1,5 +1,4 @@
 <script>
-	import { _ } from 'svelte-i18n';
 </script>
 
 <section id="home" class="bg-gradient-primary min-h-screen flex items-center dark:bg-gradient-to-br dark:from-secondary-900 dark:to-secondary-800">
@@ -8,18 +7,18 @@
 			<!-- Content -->
 			<div class="text-center lg:text-left">
 				<h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-secondary-900 dark:text-white mb-6 animate-fade-in">
-					{_('hero.title')}
-					<span class="text-gradient">{_('hero.titleHighlight')}</span>
+					Building the Future of
+					<span class="text-gradient">Coding</span>
 				</h1>
 				<p class="text-lg sm:text-xl text-secondary-700 dark:text-secondary-300 mb-8 max-w-2xl mx-auto lg:mx-0 animate-slide-up">
-					{_('hero.description')}
+					CodingGeh helps developers and businesses create amazing digital experiences with innovative solutions, modern technologies, and cutting-edge development practices.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up">
 					<a href="#contact" class="btn-primary text-lg px-8 py-4">
-						{_('hero.getStarted')}
+						Get Started Today
 					</a>
 					<a href="#about" class="btn-outline text-lg px-8 py-4">
-						{_('hero.learnMore')}
+						Learn More
 					</a>
 				</div>
 				
@@ -27,15 +26,15 @@
 				<div class="grid grid-cols-3 gap-8 mt-12 max-w-md mx-auto lg:mx-0">
 					<div class="text-center">
 						<div class="text-2xl font-bold text-primary-600">500+</div>
-						<div class="text-sm text-secondary-600 dark:text-secondary-400">{_('hero.stats.clients')}</div>
+						<div class="text-sm text-secondary-600 dark:text-secondary-400">Happy Clients</div>
 					</div>
 					<div class="text-center">
 						<div class="text-2xl font-bold text-primary-600">1000+</div>
-						<div class="text-sm text-secondary-600 dark:text-secondary-400">{_('hero.stats.projects')}</div>
+						<div class="text-sm text-secondary-600 dark:text-secondary-400">Projects Completed</div>
 					</div>
 					<div class="text-center">
 						<div class="text-2xl font-bold text-primary-600">10+</div>
-						<div class="text-sm text-secondary-600 dark:text-secondary-400">{_('hero.stats.years')}</div>
+						<div class="text-sm text-secondary-600 dark:text-secondary-400">Years Experience</div>
 					</div>
 				</div>
 			</div>

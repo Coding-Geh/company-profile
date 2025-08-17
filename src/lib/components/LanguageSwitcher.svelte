@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
 	import { browser } from '$app/environment';
+	import { onMount } from 'svelte';
 	
 	let mounted = false;
 	
@@ -12,6 +13,23 @@
 	function switchLanguage(lang: string) {
 		locale.set(lang);
 	}
+	
+	onMount(() => {
+		function handleClickOutside(event: MouseEvent) {
+			const menu = document.getElementById('language-menu');
+			const button = event.target as HTMLElement;
+			
+			if (menu && !menu.contains(button) && !button.closest('button')) {
+				menu.classList.add('hidden');
+			}
+		}
+		
+		document.addEventListener('click', handleClickOutside);
+		
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	});
 </script>
 
 {#if mounted}
@@ -24,6 +42,8 @@
 				🇺🇸 English
 			{:else if $locale === 'id'}
 				🇮🇩 Indonesia
+			{:else}
+				🌐 {navigator.language?.startsWith('id') ? 'Indonesia' : 'English'}
 			{/if}
 			<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -50,28 +70,4 @@
 			</div>
 		</div>
 	</div>
-{/if}
-
-<!-- Close menu when clicking outside -->
-{#if mounted}
-	<script>
-		import { onMount } from 'svelte';
-		
-		onMount(() => {
-			function handleClickOutside(event: MouseEvent) {
-				const menu = document.getElementById('language-menu');
-				const button = event.target as HTMLElement;
-				
-				if (menu && !menu.contains(button) && !button.closest('button')) {
-					menu.classList.add('hidden');
-				}
-			}
-			
-			document.addEventListener('click', handleClickOutside);
-			
-			return () => {
-				document.removeEventListener('click', handleClickOutside);
-			};
-		});
-	</script>
 {/if}

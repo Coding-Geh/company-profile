@@ -1,6 +1,4 @@
 <script>
-	import { _ } from 'svelte-i18n';
-	
 	const team = [
 		{
 			name: 'CodingGeh',
@@ -52,10 +50,10 @@
 <section id="team" class="section-padding bg-white dark:bg-secondary-900">
 	<div class="container-max">
 		<div class="text-center mb-16">
-			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
+			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 dark:text-white mb-4">
 				Meet the CodingGeh Team
 			</h2>
-			<p class="text-lg text-secondary-700 max-w-3xl mx-auto">
+			<p class="text-lg text-secondary-700 dark:text-secondary-300 max-w-3xl mx-auto">
 				Our passionate team of developers, designers, and tech enthusiasts dedicated to creating amazing digital experiences.
 			</p>
 		</div>
@@ -70,7 +68,7 @@
 						<div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/20 to-primary-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
 					</div>
 					
-					<h3 class="text-xl font-bold text-secondary-900 mb-2">
+					<h3 class="text-xl font-bold text-secondary-900 dark:text-white mb-2">
 						{member.name}
 					</h3>
 					
@@ -78,7 +76,7 @@
 						{member.position}
 					</p>
 					
-					<p class="text-secondary-700 text-sm mb-4">
+					<p class="text-secondary-700 dark:text-secondary-300 text-sm mb-4">
 						{member.description}
 					</p>
 					
@@ -98,7 +96,7 @@
 		</div>
 		
 		<div class="text-center mt-12">
-			<p class="text-secondary-700 mb-6">
+			<p class="text-secondary-700 dark:text-secondary-300 mb-6">
 				Join our growing team of professionals
 			</p>
 			<a href="#contact" class="btn-outline">
