@@ -62,7 +62,7 @@
   }
   
   .card {
-    @apply bg-white rounded-xl shadow-lg border border-secondary-200 p-6;
+    @apply bg-white dark:bg-secondary-800 rounded-xl shadow-lg border border-secondary-200 dark:border-secondary-700 p-6;
   }
   
   .section-padding {
@@ -86,5 +86,9 @@
   
   .bg-gradient-secondary {
     @apply bg-gradient-to-br from-secondary-50 via-secondary-100 to-secondary-200;
+  }
+  
+  .dark .bg-gradient-secondary {
+    @apply bg-gradient-to-br from-secondary-800 to-secondary-900;
   }
 }

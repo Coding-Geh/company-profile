@@ -116,8 +116,8 @@
 				
 				<div class="space-y-6">
 					<div class="flex items-start space-x-4">
-						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-							<span class="text-primary-600 text-lg">📍</span>
+						<div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0">
+							<span class="text-primary-600 dark:text-primary-400 text-lg">📍</span>
 						</div>
 						<div>
 							<h4 class="font-semibold text-secondary-900 dark:text-white mb-1">Office Address</h4>
@@ -130,8 +130,8 @@
 					</div>
 					
 					<div class="flex items-start space-x-4">
-						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-							<span class="text-primary-600 text-lg">📞</span>
+						<div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0">
+							<span class="text-primary-600 dark:text-primary-400 text-lg">📞</span>
 						</div>
 						<div>
 							<h4 class="font-semibold text-secondary-900 dark:text-white mb-1">Phone</h4>
@@ -143,8 +143,8 @@
 					</div>
 					
 					<div class="flex items-start space-x-4">
-						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-							<span class="text-primary-600 text-lg">📧</span>
+						<div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0">
+							<span class="text-primary-600 dark:text-primary-400 text-lg">📧</span>
 						</div>
 												<div>
 							<h4 class="font-semibold text-secondary-900 dark:text-white mb-1">Email</h4>
@@ -159,16 +159,16 @@
 				<div class="pt-6 border-t border-secondary-200 dark:border-secondary-700">
 					<h4 class="font-semibold text-secondary-900 dark:text-white mb-4">Follow Us</h4>
 					<div class="flex space-x-4">
-						<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 hover:bg-primary-200 transition-colors duration-200" aria-label="LinkedIn">
+						<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors duration-200" aria-label="LinkedIn">
 							<span class="text-lg">💼</span>
 						</a>
-						<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 hover:bg-primary-200 transition-colors duration-200" aria-label="Twitter">
+						<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors duration-200" aria-label="Twitter">
 							<span class="text-lg">🐦</span>
 						</a>
-						<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 hover:bg-primary-200 transition-colors duration-200" aria-label="Facebook">
+						<a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors duration-200" aria-label="Facebook">
 							<span class="text-lg">📘</span>
 						</a>
-						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center text-primary-600 hover:bg-primary-200 transition-colors duration-200" aria-label="Instagram">
+						<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors duration-200" aria-label="Instagram">
 							<span class="text-lg">📷</span>
 						</a>
 					</div>

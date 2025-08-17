@@ -30,8 +30,8 @@
 				<!-- Values -->
 				<div class="space-y-4">
 					<div class="flex items-start space-x-4">
-						<div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 text-lg">💡</span>
+						<div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+							<span class="text-primary-600 dark:text-primary-400 text-lg">💡</span>
 						</div>
 						<div>
 							<h4 class="font-semibold text-secondary-900 dark:text-white mb-1">Innovation</h4>
@@ -40,8 +40,8 @@
 					</div>
 					
 					<div class="flex items-start space-x-4">
-						<div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 text-lg">🤝</span>
+						<div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+							<span class="text-primary-600 dark:text-primary-400 text-lg">🤝</span>
 						</div>
 						<div>
 							<h4 class="font-semibold text-secondary-900 dark:text-white mb-1">Integrity</h4>
@@ -50,8 +50,8 @@
 					</div>
 					
 					<div class="flex items-start space-x-4">
-						<div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 text-lg">🎯</span>
+						<div class="w-8 h-8 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+							<span class="text-primary-600 dark:text-primary-400 text-lg">🎯</span>
 						</div>
 						<div>
 							<h4 class="font-semibold text-secondary-900 dark:text-white mb-1">Excellence</h4>
@@ -63,7 +63,7 @@
 			
 			<!-- Image/Stats -->
 			<div class="relative">
-				<div class="bg-gradient-secondary rounded-2xl p-8">
+				<div class="bg-gradient-secondary dark:bg-gradient-to-br dark:from-secondary-800 dark:to-secondary-900 rounded-2xl p-8">
 					<div class="grid grid-cols-2 gap-6">
 											<div class="text-center">
 						<div class="text-3xl font-bold text-primary-600 mb-2">15+</div>

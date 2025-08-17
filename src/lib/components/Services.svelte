@@ -53,7 +53,7 @@
 		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 			{#each services as service, index}
 				<div class="card hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-slide-up" style="animation-delay: {index * 0.1}s;">
-					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+					<div class="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center mb-6">
 						<span class="text-2xl">{service.icon}</span>
 					</div>
 					

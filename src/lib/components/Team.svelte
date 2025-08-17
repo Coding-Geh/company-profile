@@ -62,7 +62,7 @@
 			{#each team as member, index}
 				<div class="text-center animate-slide-up" style="animation-delay: {index * 0.1}s;">
 					<div class="relative mb-6">
-						<div class="w-32 h-32 rounded-full mx-auto bg-gradient-to-br from-primary-100 to-primary-200 flex items-center justify-center shadow-lg">
+						<div class="w-32 h-32 rounded-full mx-auto bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 flex items-center justify-center shadow-lg">
 							<span class="text-4xl">{member.avatar}</span>
 						</div>
 						<div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary-500/20 to-primary-600/20 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
