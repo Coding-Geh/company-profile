@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#3b82f6" />
+		<meta name="description" content="Modern and professional development company - CodingGeh" />
+		<meta name="keywords" content="coding, development, web, mobile, react, vue, svelte, programming, codinggeh" />
+		<meta name="author" content="CodingGeh" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="%sveltekit.url%" />
+		<meta property="og:title" content="CodingGeh - Building the Future of Coding" />
+		<meta property="og:description" content="Modern and professional development company. CodingGeh helps developers and businesses create amazing digital experiences." />
+		<meta property="og:image" content="%sveltekit.assets%/og-image.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="%sveltekit.url%" />
+		<meta property="twitter:title" content="CodingGeh - Building the Future of Coding" />
+		<meta property="twitter:description" content="Modern and professional development company. CodingGeh helps developers and businesses create amazing digital experiences." />
+		<meta property="twitter:image" content="%sveltekit.assets%/og-image.png" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+		<!-- Security headers -->
+		<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+		<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+		<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="antialiased">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
