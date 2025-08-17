@@ -1,14 +1,15 @@
 <script>
+	import { _ } from 'svelte-i18n';
 </script>
 
-<section id="about" class="section-padding bg-white">
+<section id="about" class="section-padding bg-white dark:bg-secondary-900">
 	<div class="container-max">
 		<div class="text-center mb-16">
-			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">
-				About CodingGeh
+			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 dark:text-white mb-4">
+				{_('about.title')}
 			</h2>
-			<p class="text-lg text-secondary-700 max-w-3xl mx-auto">
-				We are a passionate team of developers and designers dedicated to creating amazing digital experiences and helping businesses thrive in the modern tech landscape.
+			<p class="text-lg text-secondary-700 dark:text-secondary-300 max-w-3xl mx-auto">
+				{_('about.description')}
 			</p>
 		</div>
 		

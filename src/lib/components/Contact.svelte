@@ -1,4 +1,6 @@
 <script>
+	import { _ } from 'svelte-i18n';
+	
 	let formData = {
 		name: '',
 		email: '',
@@ -21,7 +23,7 @@
 	}
 </script>
 
-<section id="contact" class="section-padding bg-gradient-primary">
+<section id="contact" class="section-padding bg-gradient-primary dark:bg-gradient-to-br dark:from-secondary-800 dark:to-secondary-900">
 	<div class="container-max">
 		<div class="text-center mb-16">
 			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">

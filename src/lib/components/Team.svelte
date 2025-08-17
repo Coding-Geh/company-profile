@@ -1,4 +1,6 @@
 <script>
+	import { _ } from 'svelte-i18n';
+	
 	const team = [
 		{
 			name: 'CodingGeh',
@@ -47,7 +49,7 @@
 	];
 </script>
 
-<section id="team" class="section-padding bg-white">
+<section id="team" class="section-padding bg-white dark:bg-secondary-900">
 	<div class="container-max">
 		<div class="text-center mb-16">
 			<h2 class="text-3xl sm:text-4xl font-bold text-secondary-900 mb-4">

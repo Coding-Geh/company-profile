@@ -1,7 +1,8 @@
 <script>
+	import { _ } from 'svelte-i18n';
 </script>
 
-<footer class="bg-secondary-900 text-white">
+<footer class="bg-secondary-900 dark:bg-secondary-950 text-white">
 	<div class="container-max py-12 px-4 sm:px-6 lg:px-8">
 		<div class="grid md:grid-cols-4 gap-8">
 			<!-- Company Info -->
